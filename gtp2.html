@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Speakers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #274c79;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .timeline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 30px 0;
+      background-color: #274c79;
+    }
+
+    .timeline::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #6fe3d0;
+    }
+
+    .timeline-item {
+      position: relative;
+      z-index: 2;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .timeline-item span {
+      display: block;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .flag {
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background-color: #6dc5f5;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .cards-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .card-content {
+      padding-top: 15px;
+    }
+
+    .card h3 {
+      color: #274c79;
+    }
+
+    .card p {
+      color: #666;
+    }
+
+    footer {
+      background-color: #274c79;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 18px;
+    }
+
+    footer a:hover {
+      color: #6dc5f5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Club Speakers</h1>
+  </header>
+
+  <section class="timeline">
+    <div class="timeline-item">
+      <span>July 2024</span>
+    </div>
+    <div class="flag">🚩</div>
+    <div class="timeline-item">
+      <span>Present</span>
+    </div>
+  </section>
+
+  <section class="cards-container">
+    <!-- Speaker 1 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Speaker 1">
+      <div class="card-content">
+        <h3>Speaker Name 1</h3>
+        <p><strong>Topic:</strong> Introduction to Our Club</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula, libero non condimentum mollis, eros urna feugiat augue, vel cursus nunc tortor id nunc.</p>
+      </div>
+    </div>
+
+    <!-- Speaker 2 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Speaker 2">
+      <div class="card-content">
+        <h3>Speaker Name 2</h3>
+        <p><strong>Topic:</strong> The Future of Technology</p>
+        <p>Quisque volutpat turpis nec magna consequat, id vehicula nisl sollicitudin. Fusce nec tincidunt sapien. Nam sollicitudin purus et lorem efficitur, nec euismod dui feugiat.</p>
+      </div>
+    </div>
+
+    <!-- Speaker 3 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Speaker 3">
+      <div class="card-content">
+        <h3>Speaker Name 3</h3>
+        <p><strong>Topic:</strong> Innovation and Creativity</p>
+        <p>Nullam ac sapien vel felis tempus laoreet. Sed placerat nulla eu est vestibulum, nec accumsan turpis feugiat. Integer tincidunt varius lacus, et fermentum ante tempor at.</p>
+      </div>
+    </div>
+
+    <!-- Speaker 4 -->
+    <div class="card">
+      <img src="https://via.placeholder.com/300x200" alt="Speaker 4">
+      <div class="card-content">
+        <h3>Speaker Name 4</h3>
+        <p><strong>Topic:</strong> Leadership in Modern Times</p>
+        <p>Morbi suscipit tortor id dui sodales, in tincidunt lectus fringilla. Vivamus vel dolor et arcu fermentum cursus a eu lorem. Curabitur ac augue at nunc vehicula scelerisque.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Follow us on:</p>
+    <a href="https://instagram.com" target="_blank">Instagram</a>
+    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+  </footer>
+
+</body>
+</html>

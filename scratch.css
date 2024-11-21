@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-top{
+    margin: 0;
+    padding: 0;
+    background-color: #274c79;
+    text-align: center;
+    color: white;
+    height: 100px;
+}
+
+.main-container {
+    border: 1px solid red;
+    margin: 20px;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+.footer-main {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background-color: #274c79;
+}

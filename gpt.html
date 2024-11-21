@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Club Speaker Series</title>
+    <style>
+        /* Reset some basic styles */
+        body, h1, h2, p, ul {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            color: #274c79;
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        .timeline {
+            background-color: #274c79;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .timeline h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .timeline p {
+            font-size: 1.1rem;
+        }
+
+        /* Timeline Line */
+        .timeline-line {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            position: relative;
+        }
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: silver;
+        }
+        .timeline-marker {
+            position: relative;
+            z-index: 2;
+        }
+        .flag {
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background-color: #6fe3d0;
+            border-radius: 50%;
+        }
+
+        /* Speaker Cards Section */
+        .cards-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 0;
+        }
+        .card {
+            display: flex;
+            max-width: 900px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .card-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px 0 0 8px;
+        }
+        .card-content {
+            padding: 20px;
+            flex: 1;
+        }
+        .card-content h2 {
+            color: #274c79;
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+        .card-content p {
+            color: #666;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #274c79;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer a {
+            margin: 0 10px;
+            font-size: 1.2rem;
+        }
+
+        .links-footer {
+            color:white;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 768px) {
+            .card {
+                flex-direction: column;
+            }
+            .card-img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Timeline Section -->
+    <div class="timeline">
+        <h1>Welcome to the AI in Buisness Club!</h1>
+        <p>From July 2024 to Present</p>
+        <!-- <div class="timeline-line">
+            <div class="timeline-marker">
+                <span>July 2024</span>
+            </div>
+            <div class="flag"></div>
+        </div> -->
+    </div>
+
+    <!-- Speaker Cards Section -->
+    <div class="cards-container">
+
+        <!-- Speaker Card 1 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Speaker 1" class="card-img">
+            <div class="card-content">
+                <h2>Speaker 1</h2>
+                <p><strong>Topic:</strong> Innovation in Technology</p>
+                <p>Join us as Speaker 1 explores the latest trends in technology and their impact on the future of business and society.</p>
+            </div>
+        </div>
+
+        <!-- Speaker Card 2 -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Speaker 2</h2>
+                <p><strong>Topic:</strong> Leadership in Modern Times</p>
+                <p>Speaker 2 will discuss the changing nature of leadership in the 21st century and the skills needed to succeed in the global marketplace.</p>
+            </div>
+            <img src="https://via.placeholder.com/200" alt="Speaker 2" class="card-img">
+        </div>
+
+        <!-- Speaker Card 3 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Speaker 3" class="card-img">
+            <div class="card-content">
+                <h2>Speaker 3</h2>
+                <p><strong>Topic:</strong> Climate Change and Sustainability</p>
+                <p>Speaker 3 will talk about the urgent need for sustainability in business and how companies can take action to combat climate change.</p>
+            </div>
+        </div>
+
+        <!-- Speaker Card 4 -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Speaker 4</h2>
+                <p><strong>Topic:</strong> The Future of Work</p>
+                <p>In this session, Speaker 4 will discuss the changing landscape of work, remote work trends, and what the future holds for employment.</p>
+            </div>
+            <img src="https://via.placeholder.com/200" alt="Speaker 4" class="card-img">
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <a href="https://www.instagram.com" target="_blank" class="links-footer">Instagram</a>
+        <a href="https://www.linkedin.com" target="_blank" class="links-footer">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
